@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.site-init
+{
+    /*background-image: url("img1/banner.jpg");*/
+    background-color: black;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: -22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.site-init a
+{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+}
+.img{
+    background-image:url("../clouds2.jpeg");
+    height: 450px;
+    width: 650px;
+    margin-left: 10%;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+}
+.backColor{
+    background-color: rgba(173, 216, 230, 0.628);
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width:900px){
+.flex{
+    display: flex;
+    flex-direction: column;
+    }
+}
+section{
+    text-align: center;
+}

@@ -2,39 +2,36 @@
     padding: 0;
 }
 
-.bannerAndFooter{
-    background-image: URL(../clouds.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: lightslategray;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: whitesmoke;
-    height: 200px;
-    width: 100%; 
-}
+
 nav a{
     text-decoration: none;
     color: whitesmoke;
     margin-left: 30px;
 }
-.section1{
-    display: flex;
-    flex-direction: row;
-}
-.section2{
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-}
+.section1, .section2,
 .section3{
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }
-.section4{
+@media(max-width:900px){
+.section1,
+.section3{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+}
+@media(max-width:900px){
+.section2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
 }
 .div1{
     background-color: whitesmoke;
@@ -66,29 +63,54 @@ nav a{
     height: 500px;
     width: 50%;
 }
-main{
-    text-align: center;
-    background-image: URL(../clouds.jpeg);
-    background-repeat: no-repeat;
-    background-size: 320%;
-}
 .pageContainer{
-    max-width: 1000px;
-    padding-left: 5%;
-    padding-right: 5%;
     align-items: center;
 }
+@media(max-width:900px){
+.pageContainer{
+
+    text-align: center;
+    margin-right: -82%;
+    }
+}
 .footer1{
-    background-image: URL(../clouds2.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: lightslategray;
+    background-color: black;
+    color: lightgray;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    color: rgb(57, 57, 57);
+    height: 75px;
+    width: 100%; 
+    margin-top: 80px;
+}
+.allPage1{
+    background-image:url(../clouds.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bannerAndFooter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: whitesmoke;
     height: 200px;
     width: 100%; 
-    border-top: 25px solid rgba(158, 145, 123, 0.64)
-    
 }
+@media(max-width:900px){
+.bannerAndFooter{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke;
+    height: 200px;
+    width: 100%; 
+    }
+}
+@media(max-width:900px){
+    header, header a{
+        text-align: center;
+        color: black !important;
+    }
+}
+
